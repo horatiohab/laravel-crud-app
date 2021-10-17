@@ -18,7 +18,10 @@
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="{{ route('countries.index') }}">Countries</a>
                     <a class="dropdown-item" href="{{ route('cities.index') }}">Cities</a>
+                    <a class="dropdown-item" href="{{ route('departments.index') }}">Departments</a>
+                    <a class="dropdown-item" href="{{ route('companies.index') }}">Companies</a>
                     <a class="dropdown-item" href="{{ route('employees.index') }}">Employees</a>
+                    
                 </div>
             </div>
             <li class="nav-item">

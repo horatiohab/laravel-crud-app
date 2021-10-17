@@ -3,7 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\CountryController;
 use App\Http\Controllers\Backend\CityController;
+use App\Http\Controllers\Backend\DepartmentController;
 use App\Http\Controllers\Backend\EmployeeController;
+use App\Http\Controllers\Backend\CompanyController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -24,5 +27,8 @@ Auth::routes();
 
 Route::resource('countries', CountryController::class);
 Route::resource('cities', CityController::class);
+Route::resource('departments', DepartmentController::class);
 Route::resource('employees', EmployeeController::class);
+Route::resource('companies', CompanyController::class);
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
